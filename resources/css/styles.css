@@ -7,9 +7,12 @@ body {
     font-family: Helvetica;
     font-size: 22px;
     color: seashell;
-    background-color: black;
     opacity: 0.9;
+    text-align: center;
+    background-color: black;
 }
+
+/* Header formatting */
 
 header {
     position: fixed;
@@ -19,6 +22,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
+    background-color: black;
 }
 
 header img {
@@ -43,7 +48,100 @@ nav li {
     padding: 0px 10px;
 }
 
+/* Main Section Formatting */
+
 main {
-    text-align: center;
+    position: relative;
+    top: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+.heading {
+    line-height: 3rem;
+}
+
+/* Mission Subsection */
+
+#mission {
+    height: 700px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    background-image: url("../images/img-mission-background.jpg");
+}
+
+.mission .heading {
+    width: 100%;
+    background-color: black;
+}
+
+/* Featured Teas Subsection */
+
+#featured-tea {
+    width: 1000px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#tea-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#tea-images img {
+    height: 200px;
+    width: 300px;
+    margin: 10px 10px;
+}
+
+/* Locations Subsection */
+
+#locations {
+    height: 500px;
+    width: 1200px;
+    background-image: url("../images/img-locations-background.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#location-descriptions {
+    display: flex;
+    margin: 15px 40px 0 40px;
+}
+
+.left, .right, .center {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 300px;
+    background-color: black;
+    margin: 15px 20px;
+    padding: 10px;
+    opacity: 1;
+    justify-content: space-between;
+    line-height: 3rem;
+}
+
+/* Footer Formatting */
+
+footer {
+    position: relative;
+    top: 70px;
+    margin-top: 5%;
+}
+
+.contact {
+    line-height: 3rem;
+    height: 200px;
+}
+
+#copyright {
+    text-align: left;
+    margin-left: 20px;
+}
